@@ -1,110 +1,174 @@
-/*---------*/
-/* GENERAL */
-/*---------*/
+/*Classic*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
 }
 
-h1, h2, h3, h4, h5, h6, p, button, ul {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+body {
+    background-color: rgb(0, 0, 0);
 }
 
-a {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: blue;
-    text-decoration: underline;
+h1 {
+    font-size: 4em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.5em;
+}
+
+h5 {
+    font-size: 1em;
 }
 
 button {
-    background-color: rgb(21, 21, 21);
-    color: white;
-    border: 3px solid blue;
-    padding-inline: 30px;
+    min-width: 100px;
+    padding-inline: 50px;
+    min-height: 15px;
     padding-block: 10px;
-    transition: all 0.4s ease;
-    margin-block: 20px;
-    margin-right: 1%;
+    background-color: black;
+    /*border: 5px lime solid;
+    border-radius: 5px;*/
+    border: 1px lime solid;
+    font-size: 1em;
+    font-weight: 1000;
+    transition: all 0.2s ease;
+    margin-block: 10px;
 }
 
 button:hover {
-    border: 3px solid rgb(46, 46, 250);
-    background-color: rgb(70, 70, 70);
+    border: 1px aqua solid;
+    background-color: rgb(23, 23, 23);
 }
 
-/*------*/
-/*Colors*/
-/*------*/
+a {
+    color: aqua;
+    text-decoration: underline;
+}
 
-red {
-    color: red;
+/*Colors*/
+
+lime {
+    color: lime;
+}
+
+aqua {
+    color: aqua;
 }
 
 green {
     color: green;
 }
 
-orange {
-    color: orange;
+red {
+    color: red;
 }
 
 blue {
     color: blue;
 }
 
-/*-----------------------------*/
-/* SIMPLE - top, bottom, midle */
-/*-----------------------------*/
-
-.top {
+.space {
+    height: 100px;
     width: 100%;
-    height: 10vh;
-    padding-left: 5%;
-    padding-right: 5%;
-    /*background-color: rgb(41, 41, 41);*/
-    background-color: black;
-    top: 0;
+}
+
+/*welcome*/
+
+.welcome {
+    height: 100vh;
+    min-height: fit-content;
+    background-image: url('img/welcome.png');
+    background-size: cover;
+}
+
+.welcome-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background: none;
+    padding: 30px;
+}
+
+.welcome-midle {
+    padding-left: 100px;
+}
+
+.w-left {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+}
+
+/*Main*/
+
+.nav-button {
+    min-width: 100px;
+    padding-inline: 10px;
+    min-height: 15px;
+    padding-block: 10px;
+    background: none;
+    border: none;
+    font-size: 1em;
+    font-weight: 1000;
+    transition: all 0.5s ease-in-out;
+}
+
+.nav-button:hover {
+    border: none;
+    background: none;
+    text-decoration: underline 3px;
+}
+
+
+.main {
+    padding: 100px;
+}
+
+.footer {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: rgb(14, 14, 14);
+    border-top: 5px aqua solid;
 }
 
-.bottom {
-    width: 100%;
-    height: 10vh;
-    /*background-color: rgb(41, 41, 41);*/
-    background-color: black;
-    bottom: 0;
-    text-align: center;
+
+/*Custom*/
+
+.wp-main {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.midle {
-    background-color: rgb(17, 17, 17);
-    height: 80vh;
-    color: white;
-    text-align: center;
+.wp-main-part {
+    max-width: 40%;
+}
+
+.little {
+    height: 35px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-}
-
-.simp-con {
-    margin-inline: 200px;
-}
-
-@media screen and (max-width: 1050px) {
-    .simp-con {
-        margin-inline: 100px;
-    }
-}
-
-@media screen and (max-width: 576px) {
-    .simp-con {
-        margin-inline: 30px;
-    }
+    background-color: rgb(32, 32, 32);
 }
