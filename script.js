@@ -6,3 +6,8 @@ function toggleMenu() {
         menu.style.display = "block";
     }
 }
+
+function closeAlertBar() {
+    var alertBar = document.getElementById("alertBar");
+    alertBar.style.display = "none";
+}

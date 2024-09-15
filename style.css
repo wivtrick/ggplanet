@@ -78,7 +78,7 @@ blue {
 }
 
 .space {
-    height: 100px;
+    height: 12%;
     width: 100%;
 }
 
@@ -115,6 +115,26 @@ blue {
     height: 75px;
     width: 75px;
 }
+
+.alertbar {
+    background-color: rgb(255, 68, 68);
+    height: 80px;
+    padding-left: 40px;
+    padding-right: 20px;
+    padding-top: 5px;
+    margin-inline: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 3px red solid;
+    border-radius: 5px;
+}
+
+.closex {
+    text-decoration: none;
+    color: black;
+}
+
 
 /*Main*/
 
