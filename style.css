@@ -91,6 +91,7 @@ blue {
     background-size: cover;
     background-position: center; /* A kép középpontjára fókuszál */
     background-repeat: no-repeat; /* A kép ne ismétlődjön */
+    overflow: hidden;
 }
 
 .welcome-top {
@@ -170,6 +171,14 @@ blue {
     border-top: 5px aqua solid;
 }
 
+.imgdef {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    text-align: right;
+}
+
+
 /*Custom*/
 
 .wp-main {
@@ -190,6 +199,11 @@ blue {
     justify-content: center;
     background-color: rgb(32, 32, 32);
 }
+
+.ideiglenes {
+    text-align: center;
+}
+
 
 /*Hamburger*/
 
