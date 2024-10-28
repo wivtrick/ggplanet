@@ -38,7 +38,7 @@ button {
     min-height: 15px;
     padding-block: 10px;
     background-color: black;
-    border: 1px lime solid;
+    border: 1px gold solid;
     font-size: 1em;
     font-weight: 1000;
     transition: all 0.2s ease;
@@ -46,12 +46,12 @@ button {
 }
 
 button:hover {
-    border: 1px aqua solid;
+    border: 1px red solid;
     background-color: rgb(23, 23, 23);
 }
 
 a {
-    color: aqua;
+    color: red;
     text-decoration: underline;
 }
 
@@ -75,6 +75,10 @@ red {
 
 blue {
     color: blue;
+}
+
+gold {
+    color: gold;
 }
 
 .space {
@@ -168,7 +172,7 @@ blue {
     align-items: center;
     height: 100px;
     background-color: rgb(14, 14, 14);
-    border-top: 5px aqua solid;
+    border-top: 5px red solid;
 }
 
 .imgdef {
@@ -198,6 +202,7 @@ blue {
     flex-direction: row;
     justify-content: center;
     background-color: rgb(32, 32, 32);
+    min-height: fit-content;
 }
 
 .ideiglenes {
@@ -288,4 +293,5 @@ blue {
         padding: 10px;
     }
 }
+
 
