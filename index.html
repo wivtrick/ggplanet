@@ -2,100 +2,58 @@
 <html lang="hu">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GGplanet</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GGPLANET</title>
   <style>
     body {
-      background-image: url('bg.png'); 
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      min-height: 100vh;
-      color: white;
-    }
-
-    .box {
-      background-color: rgba(32, 32, 32, 0.7);
-      padding: 30px;
-      margin: 10px;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(41, 41, 41, 0.3);
-      transition: transform 0.3s ease-in-out;
-    }
-    .box:hover {
-      transform: translateY(-10px);
-    }
-
-    /* Gombok */
-    .button {
-      display: inline-block;
-      padding: 12px 20px;
-      background-color: rgba(0, 0, 0, 0.1);
-      color: white;
-      border-radius: 8px;
-      font-size: 16px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
       text-align: center;
+      padding-top: 100px;
+    }
+
+    h1 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+
+    .divider {
+      margin: 20px auto;
+      width: 200px;
+      height: 2px;
+      background-color: #ccc;
+    }
+
+    .buttons {
+      margin-top: 30px;
+    }
+
+    .buttons a {
+      display: inline-block;
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
       text-decoration: none;
-      border: 2px solid rgba(26, 25, 25, 0.4); 
-      transition: all 0.3s ease-in-out;
-      box-shadow: 0 4px 6px rgba(20, 20, 20, 0.2); 
-      width: auto;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
     }
 
-    .button:hover {
-      transform: scale(1.05);
-      background-color: rgba(41, 41, 41, 0.2);
-      border-color: rgba(24, 23, 23, 0.6); 
-      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
-    }
-
-    /* teló */
-    @media (max-width: 640px) {
-      .button {
-        padding: 10px 18px;
-        font-size: 14px;
-        width: 100%;
-        margin: 5px 0;
-      }
+    .buttons a:hover {
+      background-color: #45a049;
     }
   </style>
 </head>
-<body class="flex flex-col justify-center items-center">
+<body>
 
-  <!-- Logó es Gombok -->
-  <div class="text-center w-full max-w-3xl">
-    <!-- Logó -->
-    <div class="mb-10">
-      <img src="icon.png" alt="Logo" class="mx-auto h-40 mb-4">
-    </div>
+  <h1>GGPLANET - A weboldal felújítás alatt.</h1>
+  <div class="divider"></div>s
 
-    <!-- Gombok -->
-    <div class="flex flex-wrap justify-center space-x-6 mb-10">
-      <a href="https://zsombi11.hu/" class="button mb-4">Zsombi11 weboldala</a>
-      <a href="https://discord.gg/AyXZGHYvCJ" class="button mb-4">Discord</a>
-      <a href="https://wiv.hu/" class="button mb-4">WIVTRICK weboldala</a>
-    </div>
-
-    <!-- Boxok -->
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 gap-6">
-      <div class="box">
-        <h2 class="text-xl font-semibold mb-4">Rólunk</h2>
-        <p class="text-gray-300">A GGPlanet egy szuper közösség, ahol sok meglepetéssel készülünk nektek!</p>
-      </div>
-      <div class="box">
-        <h2 class="text-xl font-semibold mb-4">Minecraft</h2>
-        <p class="text-gray-300">Sok eseményt is tartunk! Csatlakozz a Discordra, és kapj értesítést az összes eseményről!</p>
-      </div>
-      <div class="box">
-        <h2 class="text-xl font-semibold mb-4">Céljaink</h2>
-        <p class="text-gray-300">Egy nagy közösséget szeretnénk építeni, ahol mindenki jól érezheti magát a szerverünkön és a Discordon is!</p>
-      </div>
-      <div class="box">
-        <h2 class="text-xl font-semibold mb-4">Miért?</h2>
-        <p class="text-gray-300">A GGPlanet egy Minecraft szerverből indult, és azóta rengeteg emberhez eljutott! Csatlakozz, és légy részese egy jó közösségnek!</p>
-      </div>
-    </div>
+  <div class="buttons">
+    <a href="https://discord.gg/AyXZGHYvCJ" target="_blank">GGPlanet</a>
+    <a href="https://wiv.hu" target="_blank">Szöveg</a>
+    <a href="https://zsombi11.hu" target="_blank">Szöveg</a>
   </div>
 
 </body>
